@@ -20,7 +20,7 @@
 
 ### Локальный запуск
 ```bash
-git clone <repo-url>
+git clone https://github.com/hnstz/Shopping-Cart.git
 cd shopping-cart
 npm install
 npm run dev
@@ -46,7 +46,7 @@ E-commerce SPA pet project built with React.
 
 ### Local Setup
 ```bash
-git clone <repo-url>
+git clone https://github.com/hnstz/Shopping-Cart.git
 cd shopping-cart
 npm install
 npm run dev
