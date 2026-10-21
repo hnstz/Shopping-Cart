@@ -1,0 +1,257 @@
+/* --- Контейнер страницы корзины и шапка Total Items --- */
+.cart-page {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 40px 20px 60px;
+}
+
+.cart-summary-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 16px;
+  background-color: var(--card-bg, #ffffff);
+  border: 1px solid var(--border-color, #f3f4f6);
+  border-bottom: 2px dashed #d1d5db;
+  border-radius: 16px;
+  padding: 20px 24px;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow-sm, 0 4px 6px -1px rgba(0, 0, 0, 0.05));
+}
+
+
+.cart-total-pill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-muted, #6b7280);
+  background-color: var(--bg-color, #fafafa);
+  border: 1px solid var(--border-color, #f3f4f6);
+  padding: 8px 16px;
+  border-radius: 12px;
+}
+
+.cart-total-pill span {
+  background: linear-gradient(135deg, var(--lime-green, #84cc16), var(--orange, #f97316));
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 2px 10px;
+  border-radius: 8px;
+  font-variant-numeric: tabular-nums;
+}
+
+.cart-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto 12px auto;
+  padding: 14px 20px;
+  background-color: var(--card-bg, #ffffff);
+  border: 1px solid var(--border-color, #f3f4f6);
+  border-bottom: 2px dashed #e5e7eb;
+  border-radius: 16px;
+  box-shadow: var(--shadow-sm, 0 4px 6px -1px rgba(0, 0, 0, 0.05));
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.cart-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md, 0 10px 15px -3px rgba(0, 0, 0, 0.05));
+  border-color: #e5e7eb;
+}
+
+.cart-card-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex: 0 1 auto;
+  min-width: 0;
+}
+
+.cart-card-img-wrapper {
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+  background-color: var(--bg-color, #fafafa);
+  border: 1px solid var(--border-color, #f3f4f6);
+  border-radius: 12px;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-card-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.cart-card-info {
+  min-width: 0;
+}
+
+.cart-card-title {
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: var(--text-main, #1f2937);
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 320px;
+}
+
+.cart-card-dots {
+  flex: 1 1 20px;
+  border-bottom: 2px dotted #d1d5db;
+  margin: 0 4px;
+  min-width: 16px;
+}
+
+.cart-card-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.cart-card-qty {
+  background-color: #f7fee7;
+  color: var(--lime-green-hover, #65a30d);
+  border: 1px solid #d9f99d;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.cart-card-price {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--orange, #f97316);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.cart-card-delete {
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  border: 1px solid var(--border-color, #f3f4f6);
+  background-color: var(--bg-color, #fafafa);
+  color: var(--text-muted, #6b7280);
+  font-size: 0.85rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+
+.cart-card-delete:hover {
+  background-color: #fef2f2;
+  border-color: #fecaca;
+  color: #ef4444;
+  transform: scale(1.05);
+}
+
+.cart-card-delete:active {
+  transform: scale(0.95);
+}
+
+.cart-summary-stats {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 12px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.cart-total-price-pill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-muted, #6b7280);
+  background-color: var(--bg-color, #fafafa);
+  border: 1px solid var(--border-color, #f3f4f6);
+  padding: 8px 16px;
+  border-radius: 12px;
+}
+
+.cart-total-price-pill span {
+  color: var(--orange, #f97316);
+  font-size: 1rem;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 640px) {
+  .cart-summary-header {
+    padding: 16px;
+  }
+
+  .cart-summary-title h2 {
+    font-size: 1.25rem;
+  }
+
+  .cart-card {
+    padding: 10px 12px;
+    gap: 8px;
+  }
+
+  .cart-card-left {
+    gap: 10px;
+  }
+
+  .cart-card-img-wrapper {
+    width: 42px;
+    height: 42px;
+    padding: 4px;
+    border-radius: 8px;
+  }
+
+  .cart-card-title {
+    font-size: 0.85rem;
+    max-width: 110px;
+  }
+
+  .cart-card-dots {
+    min-width: 12px;
+  }
+
+  .cart-card-right {
+    gap: 8px;
+  }
+
+  .cart-card-qty {
+    font-size: 0.75rem;
+    padding: 4px 8px;
+  }
+
+  .cart-card-price {
+    font-size: 0.9rem;
+  }
+
+  .cart-card-delete {
+    width: 28px;
+    height: 28px;
+    font-size: 0.75rem;
+    border-radius: 8px;
+  }
+}
